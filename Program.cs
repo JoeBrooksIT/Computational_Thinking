@@ -83,9 +83,15 @@ namespace ComputationalThinkingExercises
             Console.WriteLine("ARE THESE INTEGERS EQUAL?\n");
 
             // Enter your solution here
-
+            Console.WriteLine("Please enter an integer");
+            int integer1 = Convert.ToInt32(Console.ReadLine());
+       
+            Console.WriteLine("Please enter another integer");
+            int integer2 = Convert.ToInt32(Console.ReadLine());
+            
             Console.Write("Press enter to return to the Main Menu");
             Console.ReadLine();
+
         }
 
         static void EvenOrOdd()
