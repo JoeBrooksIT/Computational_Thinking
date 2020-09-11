@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Dynamic;
 
 namespace ComputationalThinkingExercises
 {
@@ -88,7 +89,15 @@ namespace ComputationalThinkingExercises
        
             Console.WriteLine("Please enter another integer");
             int integer2 = Convert.ToInt32(Console.ReadLine());
-            
+
+            if (integer1 == integer2)
+            {
+                Console.WriteLine("Integer1 and integer2 are equal!");
+            }
+            else
+            {
+                Console.WriteLine("Integer1 and Integer2 do not match!");
+            }
             Console.Write("Press enter to return to the Main Menu");
             Console.ReadLine();
 
@@ -97,12 +106,33 @@ namespace ComputationalThinkingExercises
         static void EvenOrOdd()
         {
             // Write a console application that asks the user for a number.
-            // Tell the user if that number is even or odd.
+            Console.Clear();
+            Console.WriteLine("EVEN OR ODD?\n");
 
+           
+
+            
+           // Tell the user if that number is even or odd.
+           
+ 
             Console.Clear();
             Console.WriteLine("EVEN OR ODD?\n");
 
             // Enter your solution here
+
+            Console.WriteLine("Please enter a number?");
+
+
+            int num = Convert.ToInt32(Console.ReadLine());
+
+            if (num % 2 == 0)
+            {
+                Console.WriteLine("This number is even");
+            }
+            else
+            {
+                Console.WriteLine("This number is odd");
+            }
 
             Console.Write("Press enter to return to the Main Menu");
             Console.ReadLine();
@@ -117,7 +147,19 @@ namespace ComputationalThinkingExercises
             Console.WriteLine("VOWEL OR CONSONANT?\n");
 
             // Enter your solution here
+            Console.WriteLine("Please enter a vowel or Consonant");
+            string letter = Console.ReadLine().ToLower();
 
+            switch(letter)
+            {
+                case "A":
+                    Console.WriteLine("A is a vowel");
+            break;
+
+            }
+                
+          
+            
             Console.Write("Press enter to return to the Main Menu");
             Console.ReadLine();
         }
@@ -131,6 +173,26 @@ namespace ComputationalThinkingExercises
             Console.WriteLine("FIND THE LARGEST NUMBER\n");
 
             // Enter your solution here
+             Console.WriteLine("Please input a number");
+            int num1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Please input another number");
+            int num2 = Convert.ToInt32(Console.ReadLine());
+
+            if (num1 > num2)
+            {
+                Console.WriteLine("Your 1st num is bigger");
+
+            }
+            else if (num1 == num2)
+            {
+                Console.WriteLine("These numbers are equal");
+
+            }
+            else
+            {
+                Console.WriteLine("Your 2nd num is bigger");
+            }
+
 
             Console.Write("Press enter to return to the Main Menu");
             Console.ReadLine();
@@ -144,6 +206,22 @@ namespace ComputationalThinkingExercises
             Console.WriteLine("DIVISIBLE BY 3\n");
 
             // Enter your solution here
+            Console.WriteLine("Please enter a number");
+            int num = Convert.ToInt32(Console.ReadLine());
+
+            if (num %3 == 0 )
+            { 
+                Console.WriteLine("This number is divisible by 3");
+
+            }
+
+            else
+            {
+                Console.WriteLine("This number is not divisible by 3");
+
+            }
+        
+
 
             Console.Write("Press enter to return to the Main Menu");
             Console.ReadLine();
