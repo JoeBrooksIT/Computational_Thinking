@@ -243,7 +243,12 @@ namespace ComputationalThinkingExercises
             Console.WriteLine("RESTAURANT BILL\n");
 
             // Enter your solution here
-
+            int totalBill = Convert.ToInt32(Console.ReadLine();
+            if totalBill >= 50
+            
+            Console.WriteLine(totalBill - (totalBill * .05) = discountedBill(());
+            
+            
             Console.Write("Press enter to return to the Main Menu");
             Console.ReadLine();
         }
@@ -269,6 +274,8 @@ namespace ComputationalThinkingExercises
             Console.WriteLine("AGE CATEGORY\n");
 
             // Enter your solution here
+            Console.WriteLine("Please enter your age");
+
 
             Console.Write("Press enter to return to the Main Menu");
             Console.ReadLine();
@@ -284,6 +291,8 @@ namespace ComputationalThinkingExercises
             Console.WriteLine("WORDS TO DIGITS\n");
 
             // Enter your solution here
+
+
 
             Console.Write("Press enter to return to the Main Menu");
             Console.ReadLine();
@@ -302,6 +311,12 @@ namespace ComputationalThinkingExercises
             Console.WriteLine("WHICH NAME IS LONGER?\n");
 
             // Enter your solution here
+            Console.WriteLine("Please enter your first and last name");
+            string userName = Console.ReadLine();
+            string userName1 = Console.ReadLine();
+            if userName 
+
+
 
             Console.Write("Press enter to return to the Main Menu");
             Console.ReadLine();
@@ -318,6 +333,15 @@ namespace ComputationalThinkingExercises
             Console.WriteLine("ARE THESE NAMES THE SAME?\n");
 
             // Enter your solution here
+            Console.WriteLine("Please enter two names");
+            string userName1 = Console.ReadLine();
+            string userName2 = Console.ReadLine();
+            if (userName1 == userName2);
+                Console.WriteLine("These names are the same");
+            else (userName1 + userName2);
+                Console.WriteLine("These names are different");
+
+
 
             Console.Write("Press enter to return to the Main Menu");
             Console.ReadLine();
@@ -332,6 +356,12 @@ namespace ComputationalThinkingExercises
             Console.WriteLine("NAME AND PLACE OF BIRTH\n");
 
             // Enter your solution here
+            Console.WriteLine("Please enter your name");
+            string userName = Console.ReadLine();
+            Console.WriteLine("Please enter your place of birth");
+            string placeOfBirth = Console.ReadLine();
+            Console.WriteLine("Your name is " + userName + " and " + "your place of birth is " + placeOfBirth);
+
 
             Console.Write("Press enter to return to the Main Menu");
             Console.ReadLine();
