@@ -121,7 +121,7 @@ namespace ComputationalThinkingExercises
 
             // Enter your solution here
 
-            Console.WriteLine("Please enter a number?");
+            Console.WriteLine("Please enter a number");
 
 
             int num = Convert.ToInt32(Console.ReadLine());
@@ -148,11 +148,39 @@ namespace ComputationalThinkingExercises
             Console.WriteLine("VOWEL OR CONSONANT?\n");
 
             // Enter your solution here
-            Console.WriteLine("Please enter a vowel or Consonant");
-            string letter = Console.ReadLine().ToLower();
+            Console.WriteLine("Please enter a Vowel or Consonant");
+            string vowel = Console.ReadLine();
 
+                    
 
+            switch (vowel)
+            {
+                case "a":
+                    Console.WriteLine("A is a vowel");
+                    break;
+                case "e":
+                    Console.WriteLine("E is a vowel");
+                    break;
+                case "i":
+                    Console.WriteLine("I is a vowel");
+                    break;
+                case "o":
+                    Console.WriteLine("O is a vowel");
+                    break;
+                case "u":
+                    Console.WriteLine("U is a vowel");
+                    break;
+                default:
+                    Console.WriteLine("This is a consonant");
+                    break;
+                
+            }
+                
+            
 
+            
+            
+             
 
             Console.Write("Press enter to return to the Main Menu");
             Console.ReadLine();
@@ -237,7 +265,24 @@ namespace ComputationalThinkingExercises
             Console.WriteLine("RESTAURANT BILL\n");
 
             // Enter your solution here
+             
+            
+            Console.WriteLine("Please enter the total bill");
+            
+            int totalBill = Convert.ToInt32(Console.ReadLine());
+               
+            if (totalBill >= 52)
+            {
+                Console.WriteLine("You get a 10 % discount");
+                
+            }
+            else if (totalBill <= 52)
+            {
+                Console.WriteLine("You get a 5% discount");
+            }
 
+            Console.WriteLine("Press enter to return to the main menu");
+            Console.ReadLine();
         }
         static void AgeCategory()
         {
