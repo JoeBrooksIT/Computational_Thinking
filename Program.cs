@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Dynamic;
+using System.Runtime.CompilerServices;
 
 namespace ComputationalThinkingExercises
 {
@@ -28,7 +29,7 @@ namespace ComputationalThinkingExercises
 
                 string userChoice = Console.ReadLine().ToLower();
 
-                switch(userChoice)
+                switch (userChoice)
                 {
                     case "1":
                         AreTheseIntegersEqual();
@@ -86,7 +87,7 @@ namespace ComputationalThinkingExercises
             // Enter your solution here
             Console.WriteLine("Please enter an integer");
             int integer1 = Convert.ToInt32(Console.ReadLine());
-       
+
             Console.WriteLine("Please enter another integer");
             int integer2 = Convert.ToInt32(Console.ReadLine());
 
@@ -109,12 +110,12 @@ namespace ComputationalThinkingExercises
             Console.Clear();
             Console.WriteLine("EVEN OR ODD?\n");
 
-           
 
-            
-           // Tell the user if that number is even or odd.
-           
- 
+
+
+            // Tell the user if that number is even or odd.
+
+
             Console.Clear();
             Console.WriteLine("EVEN OR ODD?\n");
 
@@ -150,16 +151,9 @@ namespace ComputationalThinkingExercises
             Console.WriteLine("Please enter a vowel or Consonant");
             string letter = Console.ReadLine().ToLower();
 
-            switch(letter)
-            {
-                case "A":
-                    Console.WriteLine("A is a vowel");
-            break;
 
-            }
-                
-          
-            
+
+
             Console.Write("Press enter to return to the Main Menu");
             Console.ReadLine();
         }
@@ -173,7 +167,7 @@ namespace ComputationalThinkingExercises
             Console.WriteLine("FIND THE LARGEST NUMBER\n");
 
             // Enter your solution here
-             Console.WriteLine("Please input a number");
+            Console.WriteLine("Please input a number");
             int num1 = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Please input another number");
             int num2 = Convert.ToInt32(Console.ReadLine());
@@ -209,8 +203,8 @@ namespace ComputationalThinkingExercises
             Console.WriteLine("Please enter a number");
             int num = Convert.ToInt32(Console.ReadLine());
 
-            if (num %3 == 0 )
-            { 
+            if (num % 3 == 0)
+            {
                 Console.WriteLine("This number is divisible by 3");
 
             }
@@ -220,7 +214,7 @@ namespace ComputationalThinkingExercises
                 Console.WriteLine("This number is not divisible by 3");
 
             }
-        
+
 
 
             Console.Write("Press enter to return to the Main Menu");
@@ -234,7 +228,7 @@ namespace ComputationalThinkingExercises
 
             // Returning to the above problem, replace hard-coded values of 4(number of diners)
             // and 13(cost per diner) with values provided by the user.
-            
+
             // How nice!The restaurant is having Customer Appreciation Week.
             // If a table’s total bill is $50 or more, then they’ll receive a 10 % discount!
             // Otherwise, they’ll receive a 5 % discount.
@@ -243,16 +237,8 @@ namespace ComputationalThinkingExercises
             Console.WriteLine("RESTAURANT BILL\n");
 
             // Enter your solution here
-            int totalBill = Convert.ToInt32(Console.ReadLine();
-            if totalBill >= 50
-            
-            Console.WriteLine(totalBill - (totalBill * .05) = discountedBill(());
-            
-            
-            Console.Write("Press enter to return to the Main Menu");
-            Console.ReadLine();
-        }
 
+        }
         static void AgeCategory()
         {
             // You're responsible for providing a demographic report for your local school district based on age.
@@ -268,104 +254,220 @@ namespace ComputationalThinkingExercises
             // From 23 to 65: 'Working for the Man'
             // From 66 to 100: 'The Golden Years'
             // If the age of the person is less than 0 or more than 100 - it might be an alien
-                    // print: "This program is for humans".
+            // print: "This program is for humans".
 
             Console.Clear();
             Console.WriteLine("AGE CATEGORY\n");
 
             // Enter your solution here
             Console.WriteLine("Please enter your age");
+            int age = Convert.ToInt32(Console.ReadLine());
+            if (age <= 2)
+            {
+                Console.WriteLine("Still in Mama's Arms");
+            }
+            else if (age <= 4)
+            {
+                Console.WriteLine("Preschool Maniac");
+            }
+
+            else if (age <= 11)
+            {
+                Console.WriteLine("Elementary School");
+            }
 
 
-            Console.Write("Press enter to return to the Main Menu");
-            Console.ReadLine();
-        }
+            else if (age <= 14)
+            {
+                Console.WriteLine("Middle School");
+            }
 
-        static void WordsToDigits()
-        {
-            // Having a string representation of a number, you need to print the digit form of the number.
-            // Ask the user to enter a string representation of a number from zero to ten.
-            // Using switch case, print the digit (0-10) representation of the number.
+            else if (age <= 18)
+            {
+                Console.WriteLine("High School");
+            }
 
-            Console.Clear();
-            Console.WriteLine("WORDS TO DIGITS\n");
+            else if (age <= 22)
+            {
+                Console.WriteLine("College");
+            }
 
-            // Enter your solution here
+            else if (age <= 65)
+            {
+                Console.WriteLine("Working For The Man");
+            }
 
+            else if (age <= 100)
+            {
+                Console.WriteLine("The Golden Years");
+            }
 
-
-            Console.Write("Press enter to return to the Main Menu");
-            Console.ReadLine();
-        }
-
-        static void WhichNameIsLonger()
-        {
-            // Ask the user for their first and last name.
-
-            // Print the user's full name.
-            // If the first name is longer than the last name, print "First is longer."
-            // If the first name and last name are the same length, print "Same-sies!"
-            // Otherwise, print "Last must be longer!"
-
-            Console.Clear();
-            Console.WriteLine("WHICH NAME IS LONGER?\n");
-
-            // Enter your solution here
-            Console.WriteLine("Please enter your first and last name");
-            string userName = Console.ReadLine();
-            string userName1 = Console.ReadLine();
-            if userName 
-
-
-
-            Console.Write("Press enter to return to the Main Menu");
-            Console.ReadLine();
-        }
-
-        static void AreNamesSame()
-        {
-            // Ask the user for 2 names.
-
-            // If the two names are the same, print "The names are the same."
-            // If they're not the same, print "The names are different."
-
-            Console.Clear();
-            Console.WriteLine("ARE THESE NAMES THE SAME?\n");
-
-            // Enter your solution here
-            Console.WriteLine("Please enter two names");
-            string userName1 = Console.ReadLine();
-            string userName2 = Console.ReadLine();
-            if (userName1 == userName2);
-                Console.WriteLine("These names are the same");
-            else (userName1 + userName2);
-                Console.WriteLine("These names are different");
-
-
-
-            Console.Write("Press enter to return to the Main Menu");
-            Console.ReadLine();
-        }
-
-        static void NameAndBirthplace()
-        {
-            // Ask the user for their first name and where they were born.
-            // Print a sentence to the console that repeats this information.
-
-            Console.Clear();
-            Console.WriteLine("NAME AND PLACE OF BIRTH\n");
-
-            // Enter your solution here
-            Console.WriteLine("Please enter your name");
-            string userName = Console.ReadLine();
-            Console.WriteLine("Please enter your place of birth");
-            string placeOfBirth = Console.ReadLine();
-            Console.WriteLine("Your name is " + userName + " and " + "your place of birth is " + placeOfBirth);
-
-
-            Console.Write("Press enter to return to the Main Menu");
-            Console.ReadLine();
-        }
-
-    }
+            else if (age < 0)
+            {
+                Console.WriteLine("This program is for Humans");
+            }
+            else if (age > 100)
+            {
+                Console.WriteLine("This program is for Humans");
 }
+                 Console.Write("Press enter to return to the Main Menu");
+                Console.ReadLine();
+            
+        }
+
+            static void WordsToDigits()
+            {
+                // Having a string representation of a number, you need to print the digit form of the number.
+                // Ask the user to enter a string representation of a number from zero to ten.
+                // Using switch case, print the digit (0-10) representation of the number.
+
+                Console.Clear();
+                Console.WriteLine("WORDS TO DIGITS\n");
+
+                // Enter your solution here
+                Console.WriteLine("Pick a number from zero to ten");
+                string digit = Console.ReadLine();
+                switch (digit)
+                {
+                    case "zero":
+                        Console.WriteLine("0");
+                        break;
+                    case "one":
+                        Console.WriteLine("1");
+                        break;
+                    case "two":
+                        Console.WriteLine("2");
+                        break;
+                    case "three":
+                        Console.WriteLine("3");
+                        break;
+                    case "four":
+                        Console.WriteLine("4");
+                        break;
+                    case "five":
+                        Console.WriteLine("5");
+                        break;
+                    case "six":
+                        Console.WriteLine("6");
+                        break;
+                    case "seven":
+                        Console.WriteLine("7");
+                        break;
+                    case "eight":
+                        Console.WriteLine("8");
+                        break;
+                    case "nine":
+                        Console.WriteLine("9");
+                        break;
+                    case "ten":
+                        Console.WriteLine("10");
+                        break;
+
+                }
+
+                Console.Write("Press enter to return to the Main Menu");
+                Console.ReadLine();
+            }
+
+            static void WhichNameIsLonger()
+            {
+                // Ask the user for their first and last name.
+
+                // Print the user's full name.
+                // If the first name is longer than the last name, print "First is longer."
+                // If the first name and last name are the same length, print "Same-sies!"
+                // Otherwise, print "Last must be longer!"
+
+                Console.Clear();
+                Console.WriteLine("WHICH NAME IS LONGER?\n");
+
+                // Enter your solution here
+                Console.WriteLine("Please enter your first name");
+                string firstName = Console.ReadLine();
+                Console.WriteLine("Please enter your last name");
+                string lastName = Console.ReadLine();
+            if (firstName.Length == lastName.Length)
+            {
+                Console.WriteLine("Same-sies!");
+
+            }
+            else if (firstName.Length > lastName.Length)
+            {
+                Console.WriteLine("First is longer");
+
+            }
+            else if (firstName.Length < lastName.Length)
+            {
+                Console.WriteLine("Last must be longer");
+            }
+
+                    
+
+                    Console.Write("Press enter to return to the Main Menu");
+                    Console.ReadLine();
+                }
+
+                static void AreNamesSame()
+                {
+                    // Ask the user for 2 names.
+
+                    // If the two names are the same, print "The names are the same."
+                    // If they're not the same, print "The names are different."
+
+                    Console.Clear();
+                    Console.WriteLine("ARE THESE NAMES THE SAME?\n");
+
+                    // Enter your solution here
+                    Console.WriteLine("Please enter a name");
+                    string userName1 = (Console.ReadLine());
+                    Console.WriteLine("Please enter another name");
+                    string userName2 = (Console.ReadLine());
+
+                    if (userName1 == userName2)
+                    {
+                        Console.WriteLine("These names are the same");
+                    }
+                    else
+                    {
+                        Console.WriteLine("These names are different");
+                    }
+
+
+
+
+
+
+
+
+                    Console.Write("Press enter to return to the Main Menu");
+                    Console.ReadLine();
+                }
+
+                static void NameAndBirthplace()
+                {
+                    // Ask the user for their first name and where they were born.
+                    // Print a sentence to the console that repeats this information.
+
+                    Console.Clear();
+                    Console.WriteLine("NAME AND PLACE OF BIRTH\n");
+
+                    // Enter your solution here
+                    Console.WriteLine("Please enter your name");
+                    string userName = Console.ReadLine();
+                    Console.WriteLine("Please enter your place of birth");
+                    string placeOfBirth = Console.ReadLine();
+                    Console.WriteLine("Your name is " + userName + " and " + "your place of birth is " + placeOfBirth);
+
+
+                    Console.Write("Press enter to return to the Main Menu");
+                    Console.ReadLine();
+                }
+
+            }
+
+        }
+
+
+
+
+
