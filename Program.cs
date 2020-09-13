@@ -265,21 +265,24 @@ namespace ComputationalThinkingExercises
             Console.WriteLine("RESTAURANT BILL\n");
 
             // Enter your solution here
-             
+
+            //int totalBill = (13 * 4);
             
-            Console.WriteLine("Please enter the total bill");
+            Console.WriteLine("Please enter amount of diners");
+            int amountOfDiners = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("What was the cost per diner?");
+            int costPerDiner = Convert.ToInt32(Console.ReadLine());
+            int totalBill = (amountOfDiners * costPerDiner);
+            if (totalBill >= 50)
+            {
+                Console.WriteLine("You will receive a 10% discount! Your new total is " + (totalBill - (totalBill * .1)));
+            }
+            if (totalBill <= 50)
+            {
+                Console.WriteLine("You will receive a 5% discount! Your new total is " + (totalBill - (totalBill * .05)));
+            }
             
-            int totalBill = Convert.ToInt32(Console.ReadLine());
-               
-            if (totalBill >= 52)
-            {
-                Console.WriteLine("You get a 10 % discount");
-                
-            }
-            else if (totalBill <= 52)
-            {
-                Console.WriteLine("You get a 5% discount");
-            }
+            
 
             Console.WriteLine("Press enter to return to the main menu");
             Console.ReadLine();
