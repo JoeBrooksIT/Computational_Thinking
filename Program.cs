@@ -149,7 +149,7 @@ namespace ComputationalThinkingExercises
 
             // Enter your solution here
             Console.WriteLine("Please enter a Vowel or Consonant");
-            string vowel = Console.ReadLine();
+            string vowel = Console.ReadLine().ToLower();
 
                     
 
