@@ -277,7 +277,7 @@ namespace ComputationalThinkingExercises
             {
                 Console.WriteLine("You will receive a 10% discount! Your new total is " + (totalBill - (totalBill * .1)));
             }
-            if (totalBill <= 50)
+            if (totalBill < 50)
             {
                 Console.WriteLine("You will receive a 5% discount! Your new total is " + (totalBill - (totalBill * .05)));
             }
