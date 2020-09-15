@@ -310,10 +310,18 @@ namespace ComputationalThinkingExercises
             // Enter your solution here
             Console.WriteLine("Please enter your age");
             int age = Convert.ToInt32(Console.ReadLine());
-            if (age <= 2)
+            
+            if (age < 0)
+            { 
+                Console.WriteLine("This program is for Humans!");
+            }
+            
+            
+            else if (age  <= 2)
             {
                 Console.WriteLine("Still in Mama's Arms");
             }
+
             else if (age <= 4)
             {
                 Console.WriteLine("Preschool Maniac");
@@ -350,11 +358,7 @@ namespace ComputationalThinkingExercises
                 Console.WriteLine("The Golden Years");
             }
 
-            else if (age < 0)
-            {
-                Console.WriteLine("This program is for Humans");
-            }
-            else if (age > 100)
+            else 
             {
                 Console.WriteLine("This program is for Humans");
 }
@@ -374,8 +378,8 @@ namespace ComputationalThinkingExercises
 
                 // Enter your solution here
                 Console.WriteLine("Pick a number from zero to ten");
-                string digit = Console.ReadLine();
-                switch (digit)
+                string num = Console.ReadLine();
+                switch (num)
                 {
                     case "zero":
                         Console.WriteLine("0");
